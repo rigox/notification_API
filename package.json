@@ -1,0 +1,23 @@
+{
+  "name": "notification_api",
+  "version": "1.0.0",
+  "description": "API for a simple notification service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rigox/notification_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rigox/notification_API/issues"
+  },
+  "homepage": "https://github.com/rigox/notification_API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
