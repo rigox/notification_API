@@ -1,8 +1,11 @@
 //dependencies
 const PORT  = process.env.PORT || 5000;
+const db  = require("./config/db")
 const express = require("express")
 const cors =  require("cors")
 const App  =  express()
+db();
+//import route
 const notifications =  require("./routes/API/notificaton")
 
 //configure middleware
