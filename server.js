@@ -11,6 +11,9 @@ App.use(cors())
 //configure routes
 App.use('/api/sns/',notifications)
 
+App.get('/',(req,res)=>{
+   res.send('<h1>Test</h1>')
+});
 
 
 

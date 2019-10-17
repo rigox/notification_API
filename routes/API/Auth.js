@@ -1,11 +1,8 @@
 const express =  require("express")
 const router = express.Router()
 
-
-router.get('/create_topic',()=>{
+router.post('/create_user',()=>{
 
 });
 
-
-
-module.exports  =  router;
+ module.exports =  router;
