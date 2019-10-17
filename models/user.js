@@ -15,6 +15,9 @@ const userSchema  =  new Schema({
        type:String,
        required:true
   },
+  topics:{
+        type:Array
+  },
   dateCreated:{
        type:String,
        default:new Date().toUTCString()
