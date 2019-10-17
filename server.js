@@ -7,12 +7,16 @@ const App  =  express()
 db();
 //import route
 const notifications =  require("./routes/API/notificaton")
-
+const user  =  require("./routes/API/user")
+const auth =  require("./routes/API/Auth")
 //configure middleware
 App.use(express.json(),  express.urlencoded({extended:true}))
 App.use(cors())
 //configure routes
 App.use('/api/sns/',notifications)
+App.use('/api/user/' ,  user)
+App.use('/api/auth/',auth)
+
 
 App.get('/',(req,res)=>{
    res.send('<h1>Test</h1>')
