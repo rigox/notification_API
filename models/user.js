@@ -20,7 +20,7 @@ const userSchema  =  new Schema({
   },
   dateCreated:{
        type:String,
-       default:new Date().toUTCString()
+       default: Date().toUTCString()
   }
 
 })
