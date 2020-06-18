@@ -3,6 +3,7 @@ const PORT  = process.env.PORT || 5000;
 const db  = require("./config/db")
 const express = require("express")
 const cors =  require("cors")
+const colors = require("colors")
 const App  =  express()
 db();
 //import route
@@ -21,6 +22,7 @@ App.use('/api/auth/',auth)
 App.get('/',(req,res)=>{
    res.send('<h1>Test</h1>')
 });
+
 
 
 
